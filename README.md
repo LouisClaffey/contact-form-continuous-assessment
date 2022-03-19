@@ -3,6 +3,8 @@ Students were asked to create a contact form for a burrito restaurant.
 The code "mextexgood" will give the end-user a 13.5% discount.
 If the end-user chooses 'supersize' they will recieve a warning. 
 
+test the site here: https://louisclaffey.github.io/contact-form-continuous-assessment/
+
 
 Project was not graded on site responsiveness;
 tested on chrome with Screen dimensions: 1536x864
