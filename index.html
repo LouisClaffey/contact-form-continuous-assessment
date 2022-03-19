@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Juan's Orders</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js">
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Checkout</a></li>
+    </ul>
+  </header>
+  <section>
+    <h2>Your order details </h2>
+    <div class="form-container">
+      <form name="myForm" id="form1" onsubmit="return validateForm(); return validateEmail(email);" method="post" action="mailto:x21113190@student.ncirl.ie">
+        <table>
+          <tr>
+            <td>Username: </td>
+            <td><input class="inputs" type="text" name="username" placeholder="Enter username here" size="40"><br /></td>
+          </tr>
+          <tr>
+            <td>Email: </td>
+            <td><input class="inputs" type="email" name="email" size="40" required><br /></td>
+          </tr>
+          <tr>
+            <td>Password: </td>
+            <td><input class="inputs" id="passWord" type="password" name="pword" maxlength="11" size="40" required><br /></td>
+          </tr>
+          <tr>
+            <td>Size: </td>
+            <td class="dropdown-container">
+              <select name="sizes" id="my-selection" onchange="optionChange()" class="size-dropdown">
+                <option value="0">--select a size--</option>
+                <option id="lar-option" value="5">Large(€5)</option>
+                <option id="ex-option" value="7.5">Extra-Large(€7.5) </option>
+                <option id="sup-option" value="17">Supersize(€17) </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Discount Code: </td>
+            <td><input class="inputs" name="discount-code" type="text" maxlength="10" size="40"></td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td class="buttons-container">
+            <button class="sub-button" onclick="subNumber(); getTotal(); validateNum();" id="form-button1" type="button" name="subtract">-</button>
+            <span id="amount">0</span>
+            <button onclick="addNumber(); getTotal();" id="form-button2" type="button" name="add">+</button>
+          </td>
+          </tr>
+          <tr>
+            <td>Total: </td>
+            <td>
+              <div class="total-container">
+                <p id="total-value"></p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="submit-container"><input type="submit"></td>
+          </tr>
+        </table>
+
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>

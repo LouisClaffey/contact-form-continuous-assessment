@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "BW Modelica SS02", monospace;
+}
+
+body {
+  background-color: #FCF7F8;
+}
+
+header {
+  position: relative;
+  background-color: #90C2E7;
+  height: 15vh;
+  width: 100%;
+  border: 3px solid #CED3DC;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+a {
+  color: #4E8098;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+section {
+  height: 75vh;
+  width: 100%;
+}
+
+table {
+  border-spacing: 15px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+.total-container {
+  background-color: #FCF7F8;
+  position: relative;
+}
+
+#total-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.form-container {
+  color: #4E8098;
+}
+
+.dropdown-container {
+  text-align: center;
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+#form-button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #CED3DC;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: 0.7s ease;
+}
+
+#form-button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #CED3DC;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: 0.7s ease;
+}
+
+
+.submit-container {
+  text-align: center;
+}
+
+.size-dropdown {
+  width: 100%;
+}
+
+.total-container {
+  border: 2px dashed #CED3DC;
+  height: 8rem;
+}
+
+.inputs {
+  border: 2px solid #CED3DC;
+  height: 2rem;
+  font-size: 20px;
+}
+
+select {
+  border: 2px solid #CED3DC;
+  height: 2rem;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  height: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #CED3DC;
+  transition: 0.7s ease;
+}
+
+/* hover states */
+#form-button1:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #4E8098;
+}
+
+#form-button2:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #4E8098;
+}
+
+#discount-button:hover{
+  color: white;
+  cursor: pointer;
+  background-color: #4E8098;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #4E8098;
+}
+
+.inputs:hover {
+  border: 2px solid #4E8098;
+}
+
+
+select:hover {
+  border: 2px solid #4E8098;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+a:hover {
+  color: #A31621;
+}
